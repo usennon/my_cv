@@ -1,0 +1,58 @@
+{% include 'header.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+
+<div class="main">
+    <div id="head">
+        <h1>Hi,</h1>
+        <h1>I'm Michael,</h1>
+        <h1>backend engineer</h1>
+        <form action="#skills">
+            <button class="btn btn-lg btn-outline-info">My skills</button>
+        </form>
+        <form action="{{ url_for('contact') }}">
+            <button class="btn btn-lg btn-outline-info">Contact me</button>
+        </form>
+        <form action="#portfolio">
+            <button class="btn btn-lg btn-outline-info">Portfolio</button>
+        </form>
+    </div>
+    <div id="skills">
+        <h1>My skills</h1>
+        <table cellspacing="10">
+          <tr>
+            <td>Python</td>
+            <td>⭐️⭐️⭐️⭐️⭐️</td>
+              <td>API</td>
+            <td>⭐️⭐️⭐️⭐️️</td>
+              <td>C</td>
+            <td>⭐️⭐️️️</td>
+          </tr>
+          <tr>
+            <td>Flask</td>
+            <td>⭐️⭐️⭐️⭐️⭐️</td>
+              <td>JSON</td>
+            <td>⭐️⭐️⭐️⭐️⭐️</td>
+              <td>CSS</td>
+            <td>⭐️⭐️⭐️️️</td>
+          </tr>
+          <tr>
+            <td>HTML5</td>
+            <td>⭐️⭐️⭐️⭐️</td>
+              <td>Django</td>
+            <td>⭐️⭐️⭐️</td>
+          </tr>
+        </table>
+    </div>
+    <div id="portfolio">
+        <h1>My portfolio</h1>
+        <p>You can check my projects on my <a href="https://github.com/usennon/">github.</a></p>
+        <p>I've described some of them on this <a href="{{ url_for('projects') }}">portfolio page.</a></p>
+    </div>
+
+</div>
+
+
+
+{% include 'footer.html' %}

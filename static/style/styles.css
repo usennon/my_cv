@@ -1,0 +1,101 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color:  #1a1a1a;
+}
+
+.about {
+  width: 60%;
+}
+
+.bar-text {
+  font-size: 1rem;
+}
+
+.brand-text {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.brand-div {
+  background-color: black;
+  padding-top: 20px;
+  height: 150px;
+
+}
+
+.contact-form {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.navbar-brand {
+    margin-bottom: 30px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-top: 50px;
+  margin-left: 190px; /* То же, что и ширина боковой навигации */
+  font-size: 28px; /* Увеличенный текст для включения прокрутки */
+  padding: 0px 10px;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+hr {
+    margin: 5px 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.fab {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#skills {
+  padding: 320px 0 200px 0;
+}
+
+#portfolio {
+  padding: 100px 0 100px;
+}
+
+td {
+  padding-right: 100px;
+}
+

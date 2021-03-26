@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+<div class="main">
+    <h2>Contact me</h2>
+    <div class="contact-form">
+    {{ wtf.quick_form(form, button_map={"submit": "outline-info"}) }}
+    </div>
+</div>
+
+
+{% include 'footer.html' %}

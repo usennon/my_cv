@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0aefb9917c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style/styles.css">
+</head>
+<body>
+<div class="sidenav">
+    <div class="brand-div">
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+            <p class="brand-text">Michael</p>
+            <p class="brand-text">Developer Card</p>
+        </a>
+    </div>
+    <hr>
+    <a href="{{ url_for('about') }}"><p class="bar-text">About me</p></a>
+    <hr>
+  <a href="{{ url_for('projects') }}"><p class="bar-text">Portfolio</p></a>
+    <hr>
+  <a href="{{ url_for('blog') }}"><p class="bar-text">Blog</p></a>
+    <hr>
+    <a href="{{url_for('contact')}}"><p class="bar-text">Contact me</p></a>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <i class="fab fa-telegram"></i>
+        </div>
+        <div class="col-lg-3">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="col-lg-3">
+          <i class="fab fa-instagram"></i>
+        </div>
+          <div class="col-lg-3">
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+</div>
+</div>
